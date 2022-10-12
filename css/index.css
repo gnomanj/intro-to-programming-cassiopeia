@@ -17,15 +17,18 @@ section {
   border: 2px solid red;
   margin: 10px;
   padding: 25px;
-  height: 250px;
+  height: auto;
   width: 750px;
 }
 #messages {
-  height: 800px;
+  height: auto;
+}
+#experience {
+  height: auto;
 }
 #experience li {
     color: rgb(13, 75, 111);
-    list-style: square;
+    list-style: none;
 }
 #skills li {
   color: green;
@@ -38,17 +41,18 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Quicksand", sans-serif;
   }
 form {
+  display: flex;
   color: brown;
-  font-size: 2.15rem;
+  font-size: 100%;
   padding: 2rem;
   border-radius: 1rem;
   background-color: hsl(0, 0%, 100%);
   border: 4px solid hsl(0, 0%, 90%);
   gap: 2rem;
-  height: 100px;
+  height: auto;
 }
 footer {
-  background-color: chartreuse;
+  background-color: rgb(203, 209, 197);
   color: rgb(13, 75, 111);
 }
 @media screen and (min-width: 400px) {
@@ -57,7 +61,91 @@ footer {
     }
   }
   
-  @media screen and (min-width: 600px) {
-    body {
-      background-color: lavender;
-    }
+@media screen and (min-width: 600px) {
+  body {
+    background-color: rgb(232, 232, 243);
+  }
+}
+/* Add a black background color to the top navigation */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: sticky;
+  top: 0px;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  background-color: #2195f39e;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 5px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 100%;
+  text-align: center;
+}
+
+.msg {
+  display: flex;
+  flex-direction: column;
+  order: 5;
+}
+.msg > textarea {
+ flex: 5; 
+ min-width: 18em;
+}
+.contact {
+   flex: 1; 
+  order: 1;
+   margin-right: 2em; 
+}
+.contact input {
+  width: 100%;
+}
+.contact input {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.contact_buttons button {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.contact_buttons button {
+ background: gray;
+ color: white;
+ border: 0;
+}
