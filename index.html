@@ -12,22 +12,32 @@
 </head>
 
 <body>
-Luis Perez
+<ul class="navbar">
+    <li id="navbar_link_home"><a href="#" id="navbar_link_home">Home</a></li>
+    <li id="navbar_link_about"><a href="#about" id="navbar_link_about">About</a></li>
+    <li id="navbar_link_experience"><a href="#experience" id="navbar_link_experience">Experience</a></li>
+    <li id="navbar_link_skills"><a href="#skills" id="navbar_link_skills">Skills</a></li>
+    <li id="navbar_link_connect"><a href="#connect" id="navbar_link_connect">Connect</a></li>
+    <li id="navbar_link_leave_message"><a href="#leave_message" id="navbar_link_leave_message">Leave a Message</a></li>
+</ul>
 
-<section><h1>About</h1>
+<h1>Luis Perez</h1>
+
+<section id="about"><h1>About</h1>
 <p>
     I have a Bachelor's of Science in Mathematics but I love working with computer hardware and software. I enjoy problem solving. I know how to use macOS, Windows, and Linux. I have over 10 years of experience working with Macs and PCs. I am currently learning how to code in JavaScript.
 </p>
 </section>
 
 <section id="experience"><h1>Experience</h1>
-<p>
-<ul>
-    <li>Sketchers Distribution Warehouse, Warehouse Processor, California</li>
-    <li>University Library, Computer Lab Consultant, San Jose State University</li>
-    <li>Self-Employed, Computer Consultant, California</li>
-</ul>
-</p>
+<div class="grid-container">
+    <div class="grid-item"><li>F1 Distribution, Desktop Support, California</li></div>
+    <div class="grid-item"><li>Self-Employed, Computer Consultant, California</li></div>
+    <div class="grid-item"><li>University Library, Computer Lab Consultant, San Jose State University</li></div>
+    <div class="grid-item"><li>Sketchers Distribution Warehouse, Warehouse Processor, California</li></div>
+    <div class="grid-item"><li>Feather and Down, Machine Operator, California</li></div>
+    <div class="grid-item"><li>Chief Auto Parts, Cashier, California</li></div>
+</div>
 </section>
 
 <section id="skills">
@@ -35,7 +45,7 @@ Luis Perez
 <ul></ul>
 </section>
 
-<section>
+<section id="connect">
 <h1>Connect</h1>
 <p>
     Email: <a href="mailto:gnomanj@example.com">gnomanj@example.com</a><br>
@@ -45,16 +55,22 @@ Luis Perez
 </p>
 </section>
 
-<section>
+<section id="leave_message">
     <h2>Leave a Message</h2>
     <form name="leave_message">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
-        <label for="name">Email Address:</label>
-        <input type="text" id="email" name="email" required><br>
-        <label for="message">Message:</label>
-        <textarea name="message" id="message" required></textarea><br>
-        <button type="submit">Submit</button>
+        <div class="contact">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="name">Email Address:</label>
+            <input type="text" id="email" name="email" required><br>
+        </div>
+        <div class="msg">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" required></textarea><br>
+        </div>
+        <div class = "contact_buttons">
+            <button type="submit">Submit</button>
+        </div>
     </form>
 </section>
 
